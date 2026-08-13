@@ -1,3 +1,4 @@
+<img width="1536" height="1024" alt="ChatGPT Image 13 de ago  de 2026, 14_20_35" src="https://github.com/user-attachments/assets/6b08bcb2-dae3-462f-8ce2-d847b0ea6124" />
 readme_content = """# 🏭 EcoFactory - Sistema de Monitoramento e Gestão para Indústria Inteligente
 
 > **Projeto:** Reposição SENAI  
