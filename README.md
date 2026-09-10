@@ -3,88 +3,319 @@ readme_content = """# 🏭 EcoFactory - Sistema de Monitoramento e Gestão para 
 
 > **Projeto:** Reposição SENAI  
 > **Autor:** Daykel Alejandro Chavez Aleman  
+#  EcoFactory
 
----
+Sistema web para monitoramento e gestão de processos industriais, desenvolvido com foco em **indústria inteligente, produtividade e sustentabilidade**.
 
-## 📌 Sumário
-- [Sobre o Projeto](#-sobre-o-projeto)
-- [🎯 Objetivo](#-objetivo)
-- [👥 Público-Alvo](#-público-alvo)
-- [🚀 Funcionalidades](#-funcionalidades)
-- [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
-- [📂 Estrutura do Projeto](#-estrutura-do-projeto)
-- [🔧 Como Executar o Projeto](#-como-executar-o-projeto)
-  - [Pré-requisitos](#pré-requisitos)
-  - [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
-  - [Configuração e Execução do Back-End](#configuração-e-execução-do-back-end)
-  - [Configuração e Execução do Front-End](#configuração-e-execução-do-front-end)
-- [🧪 Testes](#-testes)
-- [🎨 Prototipação](#-prototipação)
-- [📄 Licença](#-licença)
+## 📌 Sobre o projeto
 
----
+A **EcoFactory** foi criada para solucionar dificuldades encontradas no controle de informações industriais que normalmente são registradas em planilhas e documentos separados.
 
-## 📖 Sobre o Projeto
+O sistema centraliza informações relacionadas a:
 
-A **EcoFactory** é uma empresa fictícia do setor industrial que enfrentava gargalos operacionais ao registrar informações críticas em planilhas e documentos descentralizados. Essa fragmentação dificultava o acompanhamento da linha de produção, o controle do maquinário, a análise de indicadores ecológicos e a tomada de decisões estratégicas.
-
-Para resolver essas limitações, a solução consiste em um sistema web **Full Stack** para centralização, monitoramento contínuo e gestão de processos industriais inteligentes.
-
-### ⚠️ Desafios e Monitoramentos Cobertos:
-- **Maquinário:** Mapeamento e situação de funcionamento dos equipamentos.
-- **Produção:** Registro e controle da quantidade de produtos fabricados.
-- **Consumo de Recursos:** Monitoramento do uso de energia elétrica e água.
-- **Segurança:** Ocorrências relacionadas à saúde e segurança do trabalho (SST).
-- **Indicadores (KPIs):** Painéis com métricas de produtividade e sustentabilidade.
-
----
+* 🏭 Máquinas utilizadas na produção;
+* 📦 Quantidade de produtos fabricados;
+* ⚡ Consumo de energia;
+* 💧 Consumo de água;
+* 🔧 Situação de funcionamento dos equipamentos;
+* 🦺 Ocorrências relacionadas à saúde e segurança;
+* 📊 Indicadores de produtividade e sustentabilidade.
 
 ## 🎯 Objetivo
 
-Desenvolver uma aplicação web Full Stack intuitiva e responsiva para o monitoramento e a gestão de processos de uma indústria inteligente. O sistema integra interface responsiva, API RESTful, persistência em banco de dados PostgreSQL, testes automatizados e controle de versão via Git/GitHub.
-
----
-
-## 👥 Público-Alvo
-
-- Gestores, operadores e clientes da empresa fictícia **EcoFactory**.
-
----
+Desenvolver uma aplicação web **Full Stack** capaz de integrar interface, API e banco de dados para facilitar o monitoramento dos processos industriais e auxiliar na tomada de decisões.
 
 ## 🚀 Funcionalidades
 
-- [x] **CRUD Completo de Máquinas:** Cadastro, listagem, edição e remoção de equipamentos industriais.
-- [x] **Cadastro e Consulta de Produção:** Controle detalhado dos itens produzidos.
-- [x] **Dashboard Interativo:** Exibição de indicadores fundamentais (produtividade, água, energia e segurança).
-- [x] **Persistência em PostgreSQL:** Armazenamento estruturado de dados (compatível com PostgreSQL Local, Neon DB ou Supabase).
-- [x] **Integração Front-End & API REST:** Consumo de endpoints via Fetch API ou Axios.
-- [x] **Validação de Formulários:** Validações no client-side e server-side para consistência dos dados.
-- [x] **Documentação Técnica:** Instruções de ambiente e execução detalhadas.
+### Obrigatórias
 
----
+* [ ] CRUD completo de máquinas;
+* [ ] Cadastro de produção;
+* [ ] Consulta de produção;
+* [ ] Dashboard com indicadores;
+* [ ] Persistência dos dados no PostgreSQL;
+* [ ] Integração entre Front-End e API REST;
+* [ ] Validação dos principais formulários;
+* [ ] Documentação do projeto.
 
-## 🛠️ Tecnologias Utilizadas
+### Complementares
 
-### **Front-End**
-- **React** (com **Vite**)
-- **JavaScript (ES6+)**, **HTML5** e **CSS3**
-- **Axios** / **Fetch API**
+* [ ] Módulo de sustentabilidade;
+* [ ] Módulo de ocorrências de segurança;
+* [ ] Filtros e ordenação;
+* [ ] Gráficos;
+* [ ] Sistema de autenticação;
+* [ ] Deploy da aplicação.
 
-### **Back-End**
-- **Node.js**
-- **Express**
+## 🛠️ Tecnologias
 
-### **Banco de Dados**
-- **PostgreSQL** (Local, Neon.tech ou Supabase)
+### Front-End
 
-### **Testes Automatizados**
-- **Front-End:** Vitest & React Testing Library
-- **Back-End:** Jest & Supertest
+* HTML5
+* CSS3
+* JavaScript
+* React
+* Vite
+* Fetch API ou Axios
 
-### **Ferramentas de Suporte & Versionamento**
-- **Git** e **GitHub**
-- **Figma** / **Canva** (Design e Prototipação)
+### Back-End
 
----
+* Node.js
+* Express
 
-## 📂 Estrutura do Projeto
+### Banco de dados
+
+* PostgreSQL
+
+### Versionamento
+
+* Git
+* GitHub
+
+### Testes
+
+* Vitest
+* React Testing Library
+* Jest
+* Supertest
+
+### Prototipação
+
+* Figma ou ferramenta equivalente
+
+## 📂 Estrutura do projeto
+
+```text
+EcoFactory/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── styles/
+│   │   └── App.jsx
+│   └── package.json
+│
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── models/
+│   │   ├── database/
+│   │   └── server.js
+│   └── package.json
+│
+├── database/
+│   └── schema.sql
+│
+├── tests/
+│
+├── .gitignore
+└── README.md
+```
+
+## 🗄️ Banco de dados
+
+O PostgreSQL será responsável pelo armazenamento das informações do sistema.
+
+Principais tabelas previstas:
+
+| Tabela        | Descrição                 |
+| ------------- | ------------------------- |
+| `usuarios`    | Usuários do sistema       |
+| `maquinas`    | Informações das máquinas  |
+| `producoes`   | Registros de produção     |
+| `consumo`     | Consumo de água e energia |
+| `ocorrencias` | Registros de segurança    |
+
+## 🔄 Arquitetura
+
+```text
+┌──────────────────────┐
+│      FRONT-END       │
+│ React / HTML / CSS   │
+│     JavaScript       │
+└──────────┬───────────┘
+           │
+           │ HTTP / Fetch / Axios
+           ▼
+┌──────────────────────┐
+│       API REST       │
+│   Node.js + Express  │
+└──────────┬───────────┘
+           │
+           │ SQL
+           ▼
+┌──────────────────────┐
+│      PostgreSQL      │
+│      Database        │
+└──────────────────────┘
+```
+
+## 📊 Dashboard
+
+O Dashboard será responsável por apresentar os principais indicadores da indústria.
+
+Exemplos:
+
+* Máquinas em funcionamento;
+* Máquinas paradas;
+* Produção total;
+* Consumo de energia;
+* Consumo de água;
+* Quantidade de ocorrências;
+* Indicadores de produtividade;
+* Indicadores de sustentabilidade.
+
+## ⚙️ Como executar o projeto
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/SEU-USUARIO/EcoFactory.git
+```
+
+### 2. Entrar na pasta
+
+```bash
+cd EcoFactory
+```
+
+### 3. Instalar as dependências do Front-End
+
+```bash
+cd frontend
+npm install
+```
+
+### 4. Executar o Front-End
+
+```bash
+npm run dev
+```
+
+### 5. Instalar as dependências do Back-End
+
+Em outro terminal:
+
+```bash
+cd backend
+npm install
+```
+
+### 6. Executar o Back-End
+
+```bash
+npm run dev
+```
+
+## 🔐 Variáveis de ambiente
+
+O Back-End deverá utilizar um arquivo `.env` para armazenar configurações do banco de dados e outras informações sensíveis.
+
+Exemplo:
+
+```env
+PORT=3000
+DATABASE_URL=sua_url_do_postgresql
+```
+
+> O arquivo `.env` não deve ser enviado para o GitHub.
+
+## 🧪 Testes
+
+Para executar os testes do projeto:
+
+```bash
+npm test
+```
+
+Os testes devem verificar principalmente:
+
+* Funcionamento da API;
+* Cadastro de máquinas;
+* Atualização de máquinas;
+* Exclusão de máquinas;
+* Cadastro de produção;
+* Validação dos formulários;
+* Funcionamento dos componentes principais.
+
+## 🌿 Sustentabilidade
+
+A EcoFactory também possui como objetivo auxiliar no acompanhamento de indicadores ambientais.
+
+O sistema poderá registrar:
+
+* 💧 Consumo de água;
+* ⚡ Consumo de energia;
+* 📈 Evolução do consumo;
+* ♻️ Indicadores de sustentabilidade.
+
+## 🦺 Segurança
+
+O módulo de segurança permitirá registrar ocorrências relacionadas ao ambiente industrial.
+
+Exemplos de informações:
+
+* Descrição da ocorrência;
+* Data;
+* Setor;
+* Gravidade;
+* Status;
+* Observações.
+
+## 👥 Público-alvo
+
+O projeto é destinado principalmente a **estudantes do Curso Técnico em Informática para Internet**, servindo também como aplicação prática dos conhecimentos de:
+
+* Desenvolvimento Web;
+* Banco de Dados;
+* APIs;
+* UI/UX;
+* Git e GitHub;
+* Testes de software;
+* Desenvolvimento Full Stack.
+
+## 📚 Objetivos de aprendizagem
+
+Durante o desenvolvimento serão aplicados conhecimentos de:
+
+1. Planejamento de software;
+2. UI/UX;
+3. Desenvolvimento Front-End;
+4. Desenvolvimento Back-End;
+5. Criação de APIs REST;
+6. Banco de dados relacionais;
+7. Integração entre sistemas;
+8. Versionamento com Git;
+9. Testes automatizados;
+10. Documentação técnica.
+
+## 🤝 Desenvolvimento colaborativo
+
+O projeto deverá utilizar o **Git e GitHub** para controlar as versões do código e permitir o desenvolvimento colaborativo.
+
+Sugestão de branches:
+
+```text
+main
+├── frontend
+├── backend
+├── database
+└── tests
+```
+
+## 📄 Status do projeto
+
+🚧 **Em desenvolvimento**
+
+O projeto será desenvolvido de forma incremental, começando pelas funcionalidades obrigatórias e posteriormente adicionando os recursos complementares.
+
+## 👨‍💻 Projeto acadêmico
+
+**Projeto: EcoFactory — Indústria Inteligente**
+
+Desenvolvido por estudantes do **Curso Técnico em Informática para Internet**.
+
+
